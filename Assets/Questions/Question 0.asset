@@ -12,10 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4bdda058e2eac4d892e08c0a6281d4, type: 3}
   m_Name: Question 0
   m_EditorClassIdentifier: 
-  question: SAnane amk
+  question: "Besin neofobisi -yeni besinleri denemeye kar\u015F\u0131 duyulan isteksizlik
+    ve korku- hakk\u0131nda yap\u0131lan bir ara\u015Ft\u0131rmada ya\u015Flar\u0131
+    4 ila 7 aras\u0131nda de\u011Fi\u015Fen ikizlerin %72\u2019sinin yeni besinleri
+    denemekle ilgili isteksizli\u011Finin genlerinden\r\nkaynakland\u0131\u011F\u0131
+    tespit edildi. Bu konuda yap\u0131lan \xF6nceki \xE7al\u0131\u015Fmalarda da
+    \xE7ocuklar\u0131n %78\u2019inin, yeti\u015Fkinlerin ise %69\u2019unun genlerinin
+    etkisiyle yeni besin denemekten ka\xE7\u0131nd\u0131\u011F\u0131 g\xF6r\xFCld\xFC.
+    Ara\u015Ft\u0131rmaya kat\u0131lan \xE7ocuklar\u0131n\r\n\xE7evresel etkenler
+    ba\u011Flam\u0131nda yeni besinlere duyduklar\u0131 korkuyu azaltabilecekleri
+    belirlendi. Bu konuda yeti\u015Fkinlerin \xE7ocuklara \xF6rnek olmas\u0131 gerekti\u011Fini
+    belirten uzmanlar; ebeveynlere evde yeni besinler denemeyi\r\nve \xE7ocuklara
+    farkl\u0131 besin se\xE7enekleri sunmay\u0131 \xF6neriyor.  Bu par\xE7adan hareketle
+    a\u015Fa\u011F\u0131dakilerin hangisine ula\u015F\u0131labilir?"
   answers:
-  - opucuk
-  - "\xD6pucuk"
-  - asdsa
-  - assssss
-  correctAnswerIndex: 1
+  - "Ebeveynlerinin yeterli besin \xE7e\u015Fitlili\u011Fi sa\u011Flad\u0131\u011F\u0131
+    ve \xF6rnek oldu\u011Fu \xE7ocuklar, yeni besinleri deneme e\u011Filimindedir. "
+  - "Yeni besinleri denemeyi reddeden \xE7ocuklar\u0131n tutumunu uygun \xE7evresel
+    ko\u015Fullar\u0131 sa\u011Flayarak de\u011Fi\u015Ftirmek m\xFCmk\xFCnd\xFCr."
+  - "\xC7ocukluk \xE7a\u011F\u0131nda ba\u015Flayan yeni besinleri denemeyi reddetme,
+    hayat kalitesini d\xFC\u015F\xFCren bir davran\u0131\u015F bozuklu\u011Fudur."
+  - "Yeni besinleri denemeyi reddetmeye y\xF6nelik \xE7al\u0131\u015Fmalar, geneti\u011Fin
+    etkisinin ya\u015F ilerledik\xE7e azald\u0131\u011F\u0131n\u0131 g\xF6stermektedir. "
+  correctAnswerIndex: 0
