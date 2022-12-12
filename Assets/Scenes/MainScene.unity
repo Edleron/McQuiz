@@ -159,10 +159,10 @@ RectTransform:
   m_Father: {fileID: 1303796930}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -180}
-  m_SizeDelta: {x: 1700, y: 500}
+  m_AnchorMin: {x: 0.05747917, y: 0.102222234}
+  m_AnchorMax: {x: 0.9424792, y: 0.5646297}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &51850236
 MonoBehaviour:
@@ -314,10 +314,10 @@ RectTransform:
   m_Father: {fileID: 1303796930}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -25, y: -25}
-  m_SizeDelta: {x: 220, y: 210}
+  m_AnchorMin: {x: 0.91, y: 0.8467037}
+  m_AnchorMax: {x: 0.9874792, y: 0.9760001}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &427998868
 MonoBehaviour:
@@ -454,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_fontSize
-      value: 35
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_fontSizeMax
@@ -465,8 +465,12 @@ PrefabInstance:
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_enableAutoSizing
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7145528733213390728, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -707,10 +711,10 @@ RectTransform:
   m_Father: {fileID: 2015913577}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 750, y: 150}
+  m_AnchorMin: {x: 0.374, y: 0.8783056}
+  m_AnchorMax: {x: 0.62632436, y: 0.98277783}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &626069717
 MonoBehaviour:
@@ -759,12 +763,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 110.1
+  m_fontSize: 79.05
   m_fontSizeBase: 110.1
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 80
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -982,7 +986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_fontSize
-      value: 35
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_fontSizeMax
@@ -993,8 +997,12 @@ PrefabInstance:
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_enableAutoSizing
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7145528733213390728, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1243,10 +1251,10 @@ RectTransform:
   m_Father: {fileID: 1479463989}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: -1000, y: 200}
+  m_AnchorMin: {x: 0.25872916, y: 0.314}
+  m_AnchorMax: {x: 0.7397501, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1158117722
 MonoBehaviour:
@@ -1445,7 +1453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_fontSize
-      value: 37.45
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_fontSizeMax
@@ -1456,8 +1464,12 @@ PrefabInstance:
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_enableAutoSizing
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7145528733213390728, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2067,10 +2079,10 @@ RectTransform:
   m_Father: {fileID: 1303796930}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 220}
-  m_SizeDelta: {x: 1730, y: 300}
+  m_AnchorMin: {x: 0.049656253, y: 0.59777784}
+  m_AnchorMax: {x: 0.951125, y: 0.86200005}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1760269067
 MonoBehaviour:
@@ -2092,7 +2104,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Test
+  m_text: "Besin neofobisi -yeni besinleri denemeye kar\u015F\u0131 duyulan isteksizlik
+    ve korku- hakk\u0131nda yap\u0131lan bir ara\u015Ft\u0131rmada ya\u015Flar\u0131
+    4 ila 7 aras\u0131nda de\u011Fi\u015Fen ikizlerin %72\u2019sinin yeni besinleri
+    denemekle ilgili isteksizli\u011Finin genlerinden kaynakland\u0131\u011F\u0131
+    tespit edildi. Bu konuda yap\u0131lan \xF6nceki \xE7al\u0131\u015Fmalarda da
+    \xE7ocuklar\u0131n %78\u2019inin, yeti\u015Fkinlerin ise %69\u2019unun genlerinin
+    etkisiyle yeni besin denemekten ka\xE7\u0131nd\u0131\u011F\u0131 g\xF6r\xFCld\xFC.
+    Ara\u015Ft\u0131rmaya kat\u0131lan \xE7ocuklar\u0131n \xE7evresel etkenler ba\u011Flam\u0131nda
+    yeni besinlere duyduklar\u0131 korkuyu azaltabilecekleri belirlendi. Bu konuda
+    yeti\u015Fkinlerin \xE7ocuklara \xF6rnek olmas\u0131 gerekti\u011Fini belirten
+    uzmanlar; ebeveynlere evde yeni besinler denemeyi ve \xE7ocuklara farkl\u0131
+    besin se\xE7enekleri sunmay\u0131 \xF6neriyor.  Bu par\xE7adan hareketle a\u015Fa\u011F\u0131dakilerin
+    hangisine ula\u015F\u0131labilir?\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2119,12 +2143,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 34
-  m_fontSizeMax: 60
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 50
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -2202,10 +2226,10 @@ RectTransform:
   m_Father: {fileID: 1479463989}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: -200, y: 200}
+  m_AnchorMin: {x: 0.05185416, y: 0.5}
+  m_AnchorMax: {x: 0.948146, y: 0.68537045}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1832974124
 MonoBehaviour:
@@ -2344,10 +2368,10 @@ RectTransform:
   m_Father: {fileID: 1303796930}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -110}
-  m_SizeDelta: {x: 250, y: 50}
+  m_AnchorMin: {x: 0.04647917, y: 0.934}
+  m_AnchorMax: {x: 0.17647916, y: 0.98100007}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1966115909
 MonoBehaviour:
@@ -2532,10 +2556,10 @@ RectTransform:
   m_Father: {fileID: 1303796930}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 85}
-  m_SizeDelta: {x: 1600, y: 50}
+  m_AnchorMin: {x: 0.083000004, y: 0.023814814}
+  m_AnchorMax: {x: 0.91625, y: 0.116000004}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2015913573
 GameObject:
@@ -2817,7 +2841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_fontSize
-      value: 37.45
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_fontSizeMax
@@ -2828,8 +2852,12 @@ PrefabInstance:
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578582000560171744, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_enableAutoSizing
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7145528733213390728, guid: cef140e82fbe5254b923dabb6c6d721f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
