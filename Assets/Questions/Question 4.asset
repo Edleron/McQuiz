@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4bdda058e2eac4d892e08c0a6281d4, type: 3}
   m_Name: Question 2
   m_EditorClassIdentifier: 
-  question: "\xD6ld\xFCmde uyandum"
+  question: "Ben hangi t\xFCrde kodlar yazar\u0131m ?"
   answers:
-  - Asko
-  - Sni yerim
-  - SSS
-  - Sanane
-  correctAnswerIndex: 1
+  - C Sharp
+  - JavaScript
+  - TypeScript
+  - Go Lang
+  correctAnswerIndex: 3

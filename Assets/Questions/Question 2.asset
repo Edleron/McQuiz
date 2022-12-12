@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4bdda058e2eac4d892e08c0a6281d4, type: 3}
   m_Name: Question 2
   m_EditorClassIdentifier: 
-  question: "\xD6ld\xFCmde uyandum"
+  question: "Hayatta sevdi\u011Fin en b\xFCy\xFCk \u015Fey ?"
   answers:
-  - Asko
-  - Sni yerim
-  - SSS
-  - Sanane
+  - Oyun Oynamak
+  - Oyun Yapmak
+  - Bilmiyorum
+  - "Cevap Vermek \u0130stemiyorum"
   correctAnswerIndex: 1

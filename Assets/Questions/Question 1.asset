@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4bdda058e2eac4d892e08c0a6281d4, type: 3}
   m_Name: Question 1
   m_EditorClassIdentifier: 
-  question: Canısı
+  question: "Bu farkl\u0131 bir soru tipidir."
   answers:
-  - Merhaba
-  - Emre
-  - Ayşen
-  - Sanane
+  - Cevap 1
+  - Cevap 2
+  - "Do\u011Fru Cevap"
+  - Cevap 4
   correctAnswerIndex: 3
