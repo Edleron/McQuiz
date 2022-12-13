@@ -15,6 +15,9 @@ public class QuestionSO : ScriptableObject
     [SerializeField]
     private int correctAnswerIndex;
 
+    [SerializeField]
+    public int correctLevelIndex;
+
     public string GetQuestion()
     {
 
@@ -29,6 +32,11 @@ public class QuestionSO : ScriptableObject
     public int GetCorrectAnswerIndex()
     {
         return correctAnswerIndex;
+    }
+
+    public int GetCorrectLevelIndex()
+    {
+        return correctLevelIndex;
     }
 
 

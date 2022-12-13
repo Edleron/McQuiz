@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
+
 
 public class Quiz : MonoBehaviour
 {
     [Header("Questions")]
-    [SerializeField] private List<QuestionSO> questions = new List<QuestionSO>();
+    [SerializeField] public List<QuestionSO> allQuestions = new List<QuestionSO>();
+    internal List<QuestionSO> questions = new List<QuestionSO>();
     [SerializeField] private QuestionSO currentQuestion;
     [SerializeField] private TextMeshProUGUI questionText;
 
@@ -15,6 +18,7 @@ public class Quiz : MonoBehaviour
     [SerializeField] private GameObject[] answerButtons;
     private int correctAnswerIndex;
     private bool hasAnsweredEarly = true;
+    private bool hasAnsweredPerformance = true;
     private string[] informationText = { "Birinci", "İkinci", "Üçüncü", "Dördüncü" };
 
     [Header("Button Colors")]
@@ -34,42 +38,91 @@ public class Quiz : MonoBehaviour
     [SerializeField] private Slider progressBar;
     public bool isComplete;
 
+    [Header("Levels")]
+    [SerializeField] private TextMeshProUGUI levelText;
+    private int levels = -1;
+
     private void Awake()
     {
         timer = FindObjectOfType<Timer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
-        progressBar.maxValue = questions.Count;
+    }
+
+    private void Start()
+    {
+        levels = -1;
+        onNextLevel();
         progressBar.value = 0;
+        progressBar.maxValue = questions.Count;
+        scoreText.text = "Skor: " + 0 + "%";
     }
 
     private void Update()
     {
-        timerImage.fillAmount = timer.fiilFraction;
-        if (timer.loadNextQuestion)
+        if (!isComplete)
         {
-            if (progressBar.value == progressBar.maxValue)
+            timerImage.fillAmount = timer.fiilFraction;
+            if (timer.loadNextQuestion)
             {
-                isComplete = true;
-                return;
+                Debug.Log("SORU SETLEME");
+                if (progressBar.value == progressBar.maxValue)
+                {
+                    isComplete = true;
+                    return;
+                }
+                timer.loadNextQuestion = false;
+                GetNextQuestion();
             }
-            hasAnsweredEarly = false;
-            GetNextQuestion();
-            timer.loadNextQuestion = false;
-        }
-        else if (!hasAnsweredEarly && !timer.isAnsweringQuestion)
-        {
-            DisplayAnswer(-1);
-            SetButtonState(false);
+
+            if (!hasAnsweredEarly && !timer.isAnsweringQuestion && !hasAnsweredPerformance)
+            {
+                Debug.Log("SORU BOŞ GEÇİLİR İSE");
+
+                DisplayAnswer(-1);
+                SetButtonState(false);
+                hasAnsweredPerformance = true;
+
+                if (scoreKeeper.GetQuestionSeen() == progressBar.maxValue)
+                {
+                    Debug.Log(scoreKeeper.GetQuestionSeen() + " : " + progressBar.maxValue);
+                    isComplete = true;
+                    return;
+                }
+            }
         }
     }
 
+    public void onNextLevel()
+    {
+        scoreText.text = "Skor: " + 0 + "%";
+
+        scoreKeeper.setNextLevel();
+
+        levels++;
+
+        if (questions.Count > 0)
+        {
+            questions.Clear();
+        }
+        questions = allQuestions.Where(x => x.correctLevelIndex == levels).ToList();
+
+        progressBar.value = 0;
+        progressBar.maxValue = questions.Count;
+
+        levelText.text = "Seviye : " + (levels + 1).ToString();
+
+        Debug.Log("Kaç Tane Soru Var : " + questions.Count);
+    }
+
+    //Button Event States
     public void OnAnswerSelected(int index)
     {
         hasAnsweredEarly = true;
         DisplayAnswer(index);
         SetButtonState(false);
         timer.CancalTimer();
-        scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
+        progressBar.value++;
+        scoreText.text = "Skor: " + scoreKeeper.CalculateScore() + "%";
     }
 
     public void DisplayAnswer(int index)
@@ -92,8 +145,15 @@ public class Quiz : MonoBehaviour
             buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
             buttonImage.sprite = correctAnswerSprite;
 
-            buttonImage = answerButtons[index].GetComponent<Image>();
-            buttonImage.sprite = wrongAnswerSprite;
+            if (index != -1)
+            {
+                buttonImage = answerButtons[index].GetComponent<Image>();
+                buttonImage.sprite = wrongAnswerSprite;
+            }
+            else
+            {
+                scoreKeeper.IncrementQuestionsNullable();
+            }
         }
     }
 
@@ -101,17 +161,23 @@ public class Quiz : MonoBehaviour
     {
         if (questions.Count > 0)
         {
+            hasAnsweredPerformance = false;
+            hasAnsweredEarly = false;
             SetButtonState(true);
             SetDefaultButtonSprites();
             GetRandomQuestion();
             DisplayQuestion();
-            progressBar.value++;
             scoreKeeper.IncrementQuestionsSeen();
         }
     }
 
     private void GetRandomQuestion()
     {
+        // seviye sistemin eklenecek
+        // 0'dan başlayıp x'inci seviyeye kadar.
+
+
+
         int index = Random.Range(0, questions.Count);
         currentQuestion = questions[index];
 

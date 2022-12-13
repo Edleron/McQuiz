@@ -6,6 +6,8 @@ using TMPro;
 public class EndScreen : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI finalScoreText;
+    [SerializeField] TextMeshProUGUI trueText;
+    [SerializeField] TextMeshProUGUI falseText;
     private ScoreKeeper scoreKeeper;
 
     private void Awake()
@@ -15,7 +17,11 @@ public class EndScreen : MonoBehaviour
 
     public void ShowFinalScore()
     {
-        finalScoreText.text = "Congratulations!\n You got a score of " +
+        finalScoreText.text = "Muhteşem!\n Senin Puanın " +
                                 scoreKeeper.CalculateScore() + "%";
+
+        trueText.text = "Doğru Sayısı : " + scoreKeeper.GetCorrectAnswers();
+
+        falseText.text = "Yanlış Sayısı : " + ((scoreKeeper.GetQuestionSeen() - scoreKeeper.GetCorrectAnswers()) - scoreKeeper.GetNullableAnswers());
     }
 }

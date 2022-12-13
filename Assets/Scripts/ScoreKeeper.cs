@@ -6,7 +6,10 @@ public class ScoreKeeper : MonoBehaviour
 {
     private int correctAnswers = 0;
     private int questionsSeen = 0;
+    private int nullableAnswers = 0;
 
+
+    #region Correct
     public int GetCorrectAnswers()
     {
         return correctAnswers;
@@ -16,7 +19,9 @@ public class ScoreKeeper : MonoBehaviour
     {
         correctAnswers++;
     }
+    #endregion
 
+    #region Seen
     public int GetQuestionSeen()
     {
         return questionsSeen;
@@ -26,9 +31,29 @@ public class ScoreKeeper : MonoBehaviour
     {
         questionsSeen++;
     }
+    #endregion
+
+    #region Nullable
+    public int GetNullableAnswers()
+    {
+        return nullableAnswers;
+    }
+
+    public void IncrementQuestionsNullable()
+    {
+        nullableAnswers++;
+    }
+    #endregion
 
     public int CalculateScore()
     {
         return Mathf.RoundToInt(correctAnswers / (float)questionsSeen * 100);
+    }
+
+    public void setNextLevel()
+    {
+        correctAnswers = 0;
+        questionsSeen = 0;
+        nullableAnswers = 0;
     }
 }
