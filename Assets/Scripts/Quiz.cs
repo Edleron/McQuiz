@@ -40,7 +40,7 @@ public class Quiz : MonoBehaviour
 
     [Header("Levels")]
     [SerializeField] private TextMeshProUGUI levelText;
-    private int levels = -1;
+    public int levels = -1;
 
     private void Awake()
     {

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     private Quiz quiz;
     private EndScreen endScreen;
+    private GameObject sonScreen;
 
     private bool performans = false;
 
@@ -16,12 +17,14 @@ public class GameManager : MonoBehaviour
     {
         quiz = FindObjectOfType<Quiz>();
         endScreen = FindObjectOfType<EndScreen>();
+        sonScreen = GameObject.FindGameObjectWithTag("sonScreen");
     }
 
     void Start()
     {
         quiz.gameObject.SetActive(true);
         endScreen.gameObject.SetActive(false);
+        sonScreen.SetActive(false);
         performans = true;
     }
 
@@ -44,10 +47,20 @@ public class GameManager : MonoBehaviour
 
     public void onNextLevel()
     {
-        quiz.isComplete = false;
-        performans = true;
-        quiz.gameObject.SetActive(true);
-        endScreen.gameObject.SetActive(false);
-        quiz.onNextLevel();
+        Debug.Log(quiz.levels);
+        if (quiz.levels < 1)
+        {
+            quiz.isComplete = false;
+            performans = true;
+            quiz.gameObject.SetActive(true);
+            endScreen.gameObject.SetActive(false);
+            quiz.onNextLevel();
+        }
+        else
+        {
+            sonScreen.SetActive(true);
+            quiz.gameObject.SetActive(false);
+            endScreen.gameObject.SetActive(false);
+        }
     }
 }
