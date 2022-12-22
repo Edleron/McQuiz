@@ -1,10 +1,10 @@
-# README #
+# README
 
-## Mc Quiz GAME
+## MC QUIZ GAME
 
-This README is a guide representing Unity worksheets and sample code.
+This README is a guide representing Unity worksheets and sample code. This game is the seconds prototype clone game of edleron. I would like to thank game dev tv for their efforts.
 
-## What is this repository for? 
+## What is this repository for?
 
 * Quick summary
 * Days of code
@@ -13,7 +13,6 @@ This README is a guide representing Unity worksheets and sample code.
 ### How do I get set up?
 
 * Summary of set up
-* git clone 'repoName'
 
 ### Contribution guidelines
 
@@ -23,9 +22,15 @@ This README is a guide representing Unity worksheets and sample code.
 ### Who do I talk to?
 
 * Repo owner or edleron@hotmail.com
-``` 
+
+```
 https://edleron.com
 ```
-``` 
-Play Game Link
+
+```
+https://play.unity.com/mg/other/mcquiz-uo
+```
+
+```
+https://edleron.itch.io/mc-quiz
 ```
